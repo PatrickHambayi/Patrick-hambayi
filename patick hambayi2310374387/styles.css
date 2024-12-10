@@ -1,0 +1,228 @@
+body, html {
+  font-family: Arial, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  margin: 0 ;
+  padding: 0;
+  color: #1e0c81;
+  text-align: center;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  color: #4126d4;
+  text-align: center;
+  overflow: hidden; /* To ensure the video doesn't overflow the header */
+}
+
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the background area */
+  opacity: 0.5; /* Reduce opacity for a dimmer effect */
+  z-index: -1; /* Push the video behind the content */
+  opacity: -5px;
+}
+#search-button {
+  background-color: #335c88;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.content {
+  position: relative;
+  z-index: 1; /* Ensure the content appears above the video */
+}
+
+
+.background-video {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100;
+ object-fit: cover; /* Ensure the video covers the background area */
+ opacity: 0.5; /* Reduce opacity for a dimmer effect */
+ opacity: -5px;
+ z-index: -1; /* push the video behind the content */
+}
+.content{
+  position: relative;
+  z-index: 1; /* Ensure the content appear abover the videoz */
+  
+}
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+  .container {
+    margin: 20px auto;
+    padding: 10px;
+  }
+}
+video#backgroundVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;/* Ensures the video covers the background area */
+  opacity: 0.5; /* Reduce opacity for a dimmer effect */
+  z-index: -1;/* Push the video behind the content */
+  opacity: -6px;
+  background-image: ("img/vd.mp4")
+}
+
+.header {
+  text-align: center;
+  padding: 20px 0;
+  color: #171817;
+  overflow: hidden; /* To ensure the video doesn't overflow the header */
+}
+.content {
+  position: relative;
+  z-index: 1; /* Ensure the content appears above the video */
+}
+
+
+@media only screen and (max-width: 480px) {
+  .container {
+    margin: 10px auto;
+    padding: 5px;
+  }
+}
+
+.heders{
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #1de7e7af;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+#localTime {
+  font-size: 16px;
+  color: #460aec;
+  margin-top: 10px;
+  font-size: x-large;
+  text-align: center;
+    }
+  
+  #location-input {
+      padding: 10px;
+      width: 60%;
+      border: none;
+      border-radius: 10px;
+      color: black;   
+}
+
+.subheading {
+  font-size: 1rem;
+  color: #d60707;
+}
+
+.tabs {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  background-color: #05a0a073;
+  color: rgba(21, 11, 161, 0.986);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.tab-btn.active {
+  background-color: #12131296;
+}
+
+.tab-content {
+  display: none;
+  color: #0f0e0e;
+  margin: 10%;
+  padding: 30px 20px;
+  border-radius: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+.tab-content.active {
+  display: block;
+  margin: 15px;
+  padding: 30px 20px;
+  border-radius: 20px;
+
+}
+.weather-info, .forecast {
+  font-size: x-large;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: #161515;
+}
+
+.weather-info img, .forecast img {
+  max-width: 100px;
+  
+}
+.forecast-card {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  width: 120px;
+}
+.forecast img {
+  width: 25px;
+  height: 25px;
+}
+
+.forecast-item {
+  position: absolute;
+  width: 18%;
+  margin: 10px;
+  padding: 10px;
+  background: #121312;
+  border-radius: 8px;
+  
+}
+
+footer {
+  display:a ;
+  text-align: center;
+  padding: 15px;
+  background-color: #5d5e68;
+  color: rgb(9, 189, 174);
+}
+
+.footer-links a {
+  color: #171718fd;
+  margin: 0 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: rgb(22, 33, 192);
+}
+
+
